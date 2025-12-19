@@ -1,9 +1,11 @@
-name: Push Teams
+name: Push and Pull request Teams
 
 on:
   push:
     branches:
       - main
+  pull_request:
+    types: [closed, assigned, opened, reopened]
 
 jobs:
   check-duplicates:
