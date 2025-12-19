@@ -2,10 +2,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT=("./team_test"
-      "./team_bench_dev"
-      "./team_chou_dev"
-      "./team_gog_dev"
+ROOT=("./dup_test/team_test"
+      "./dup_test/team_bench_dev"
+      "./dup_test/team_chou_dev"
+      "./dup_test/team_gog_dev"
       )
 
 OUT="merged.txt"
