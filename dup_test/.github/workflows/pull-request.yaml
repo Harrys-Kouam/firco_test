@@ -12,6 +12,8 @@ jobs:
   check-duplicates:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout on master
+        uses: actions/checkout@v3
       - name: Make the script files executable
         run: chmod +x duplicates.sh
       - name: Run the scripts
