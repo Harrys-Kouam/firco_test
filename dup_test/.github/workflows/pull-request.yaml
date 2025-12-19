@@ -3,6 +3,7 @@ name: Push and Pull request for Teams
 on:
   push: 
     branches:
+      - main
       - dub
   pull_request:
     branches:
