@@ -1,6 +1,9 @@
-name: Pull request for Teams
+name: Push and Pull request for Teams
 
 on:
+  push: 
+    branches:
+      - dub
   pull_request:
     branches:
       - main
@@ -12,4 +15,4 @@ jobs:
       - name: Make the script files executable
         run: chmod +x duplicates.sh
       - name: Run the scripts
-        run: ./duplicates.sh
+        run: ./dup_test/duplicates.sh
