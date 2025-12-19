@@ -1,11 +1,7 @@
-name: Push and Pull request for Teams
+name: Push Teams
 
 on:
-  push: 
-    branches:
-      - main
-      - dub
-  pull_request:
+  push:
     branches:
       - main
 
